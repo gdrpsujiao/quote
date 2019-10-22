@@ -2,28 +2,15 @@
 
 ## Project setup
 ```
-yarn install
+yarn
+yarn serve
 ```
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+## 示例代碼在 example 文件裏
+ > 將 example.env.js 文件 copy 一份 env.js
 
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+ - axios
+ - element-ui
+ - i18n 多語言
+ - vuex-persistedstate vuex 持久化存儲
+ - 引入 eslint 
