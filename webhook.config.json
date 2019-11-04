@@ -1,0 +1,8 @@
+{
+    "projectName": "vue-cli3-template",
+    "rootPath": "/home/project",
+    "commands": [
+        "yarn",
+        "yarn build"
+    ]
+}
