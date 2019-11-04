@@ -1,6 +1,6 @@
 <template>
   <div class="example">
-    <h1>{{ test }}</h1>
+    <h1>{{ test }} webhook</h1>
     <el-button @click="testClick">
       修改 vuex
     </el-button>
