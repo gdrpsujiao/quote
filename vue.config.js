@@ -6,6 +6,7 @@ function resolveSrc(_path) {
 }
 
 module.exports = {
+  publicPath: './',
   configureWebpack: {
     // mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
     resolve: {
