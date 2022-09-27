@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <h1>报价计算器</h1>
-    <h3>铁氟龙</h3>
+    <!-- <h3>铁氟龙</h3> -->
     <div class="form-item">
       <span>形状</span>
       <v-radio-group :button="true" v-model="formData.shape" :list="shapeList" />
@@ -86,6 +86,12 @@
         <span>{{ result.allProfit }}</span>
       </div>
     </div>
+
+    <h2 class="page_bottom">
+      你滑下来看我干嘛
+      <br />
+      还不回去
+    </h2>
   </div>
 </template>
 
@@ -101,18 +107,18 @@ export default {
         height: "",
         diameter: "", // 直径
         circleLong: "",
-        density: 2.4, // 密度
+        density: 1.2, // 密度
         price: "",
         cost: '',
         number: 1
       },
-      typeList: [
-        {
-          name: "铁氟龙",
-          density: 2.4,
-          price: 54
-        }
-      ],
+      // typeList: [
+      //   {
+      //     name: "铁氟龙",
+      //     density: 2.4,
+      //     price: 54
+      //   }
+      // ],
       shapeList: [
         {
           id: "棒",
@@ -176,9 +182,9 @@ export default {
 <style lang="scss" scoped>
 .home {
   padding: 20px 15px 50px;
-  width: 100%;
-  height: 100%;
-  overflow-y: auto;
+  // width: 100vw;
+  // min-height: 100vh;
+  // overflow-y: auto;
   h1 {
     padding-bottom: 10px;
     text-align: center;
@@ -233,6 +239,11 @@ export default {
   }
   .warning {
     color: #e6a23c;
+  }
+  .page_bottom {
+    margin-top: 1000px;
+    color: red;
+    text-align: center;
   }
 }
 </style>
